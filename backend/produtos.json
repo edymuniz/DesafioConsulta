@@ -1,0 +1,19 @@
+{
+    "produtos": [
+      {
+        "COD_PRODUTO": "0001",
+        "DES_PRODUTO": "DESC PROD 0001",
+        "STA_STATUS": "1 "
+      },
+      {
+        "COD_PRODUTO": "0002",
+        "DES_PRODUTO": "DESC PROD 0002",
+        "STA_STATUS": "1 "
+      },
+      {
+        "COD_PRODUTO": "0003",
+        "DES_PRODUTO": "DESC PROD 0003",
+        "STA_STATUS": "1 "
+      }
+    ]
+  }

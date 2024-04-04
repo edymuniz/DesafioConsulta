@@ -1,0 +1,22 @@
+{
+    "prod_cosif": [
+      {
+        "COD_PRODUTO": "0001",
+        "COD_COSIF": "C0001",        
+        "COD_CLASSIFICACAO": "COSIF001",
+        "STA_STATUS": "1 "
+      },
+      {
+        "COD_PRODUTO": "0002",
+        "COD_COSIF": "C0002",                
+        "COD_CLASSIFICACAO": "COSIF002",
+        "STA_STATUS": "1 "
+      },
+      {
+        "COD_PRODUTO": "0003",
+        "COD_COSIF": "C0003",                
+        "COD_CLASSIFICACAO": "COSIF003",
+        "STA_STATUS": "1 "
+      }
+    ]
+  }

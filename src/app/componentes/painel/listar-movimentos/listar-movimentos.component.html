@@ -1,0 +1,36 @@
+<section>
+    <form>
+        <ng-container *ngIf="listaMovimentos && listaMovimentos.length > 0; else semMovimentos">
+            <div class="form-container">
+                <div class="grid-container">
+                    <div class="grid-item header">Mês</div>
+                    <div class="grid-item header">Ano</div>
+                    <div class="grid-item header">Código do Produto</div>
+                    <div class="grid-item header">Descrição do Produto</div>
+                    <div class="grid-item header">NR Lançamento</div>
+                    <div class="grid-item header">Descrição</div>
+                    <div class="grid-item header">Valor</div>
+
+                    <ng-container *ngFor="let item of listaMovimentos">
+                        <div class="grid-item">{{item.mes}}</div>
+                        <div class="grid-item">{{item.ano}}</div>
+                        <div class="grid-item">{{item.codigo_produto}}</div>
+                        <div class="grid-item">{{item.descricao_produto}}</div>
+                        <div class="grid-item">{{item.nr_lancamento}}</div>
+                        <div class="grid-item">{{item.descricao}}</div>
+                        <div class="grid-item">{{item.valor}}</div>
+                    </ng-container>
+
+                </div>           
+            </div>
+        </ng-container>
+    </form>
+</section>
+<ng-template #semMovimentos>
+    <div class="form-container">
+        <p></p>
+        <div >
+            <div style="background-color: yellowgreen; color: blue; text-align: center;">Ainda não há movimentos cadastrados</div>
+        </div>
+    </div>
+</ng-template>

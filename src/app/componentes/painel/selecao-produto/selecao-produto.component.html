@@ -1,0 +1,16 @@
+<div class="label-row">
+    <label for="produto">Produto:</label>
+    <label for="cosif">Cosif:</label>
+</div>
+<div class="input-row">
+    <select id="produto" [(ngModel)]="selectedProduto" (change)="onProdutoSelect(selectedProduto)" [disabled]="!habilitarComponentes">
+        <option *ngFor="let produto of produtosFiltrados" [value]="produto.cod_produto">{{ produto.des_produto }}</option>
+      </select>
+
+      <select id="cosif" [(ngModel)]="selectedCosif" [disabled]="!habilitarComponentes">
+        <option *ngFor="let cosif of cosifs" [value]="cosif.cod_cosif">{{ cosif.cod_cosif }}</option>
+      </select>
+</div>
+
+  
+  
